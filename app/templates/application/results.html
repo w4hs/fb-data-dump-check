@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block header %}
 
+
 <h1>
     {% block title %}
     Facebook Data Dump Checker (For Bangladesh)
@@ -9,12 +10,12 @@
 {% endblock header %}
 {% block content %}
 {% if found %}
-<div class="container">
+<div class="container bg-danger result">
     <p>You're Number Was Found In The Dump</p>
 </div>
 
 {% else %}
-<div class="container">
+<div class="container bg-success result">
     <p>You're Number Was Not in the Dump</p>
 </div>
 {% endif %}
