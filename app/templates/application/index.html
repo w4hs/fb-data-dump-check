@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block header %}
+
+<h1>
+  {% block title %}
+  Facebook Data Dump Checker (For Bangladesh)
+  {% endblock title %}
+</h1>
+{% endblock header %}
+{% block content %}
+<div>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis
+    recusandae fugit est, dolorum, pariatur quia numquam iure, voluptas
+    cupiditate vel dolorem tempore exercitationem eaque incidunt animi earum
+    sint quasi.
+  </p>
+</div>
+<form method="post">
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone Number:</label>
+    <input type="text" name="phone" class="form-control" />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Check!</button>
+</form>
+{% endblock content %}
