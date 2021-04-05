@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block header %}
+
+<h1>
+    {% block title %}
+    Facebook Data Dump Checker (For Bangladesh)
+    {% endblock title %}
+</h1>
+{% endblock header %}
+{% block content %}
+{% if found %}
+<div class="container">
+    <p>You're Number Was Found In The Dump</p>
+</div>
+
+{% else %}
+<div class="container">
+    <p>You're Number Was Not in the Dump</p>
+</div>
+{% endif %}
+
+<div>
+    <a href="{{ url_for('index') }}" class="btn btn-primary">
+        Try Another!
+    </a>
+</div>
+{% endblock content %}
